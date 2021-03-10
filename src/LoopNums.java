@@ -17,8 +17,11 @@ public class LoopNums {
 			Integer value = Integer.parseInt(input.nextLine());
 			list.add(value);
 		}
+		
 		System.out.print(list);
 
+		
+		
 		int sum = 0;
 		for (int i = 0; i < list.size(); i++) {
 			sum += list.get(i);
@@ -26,18 +29,24 @@ public class LoopNums {
 
 		System.out.println("\nSum of list: " + sum);
 
+		
+		
 		int product = 1;
 
 		for (int i = 0; i < list.size(); i++) {
 			product *= list.get(i);
 		}
 
-		System.out.println("\npoduct of list: " + product);
+		System.out.println("\nProduct of list: " + product);
 
+		
+		
 		// System.out.println("smallest number is: " + Collections.min(list)); *shortcut
 
 		// System.out.println("largest number is: " + Collections.max(list)); *shortcut
 
+		
+		
 		int min = list.get(0);
 		int max = list.get(0);
 
@@ -47,15 +56,17 @@ public class LoopNums {
 			}
 		}
 
-		System.out.println("the smallest number is " + min);
+		System.out.println("The smallest number is " + min);
 
+		
+		
 		for (int i = 0; i < list.size(); i++) {
 			if (list.get(i) >= max) {
 				max = list.get(i);
 			}
 		}
 
-		System.out.println("the largest number is " + max);
+		System.out.println("The largest number is " + max);
 
 	}
 
